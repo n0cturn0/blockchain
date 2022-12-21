@@ -19,3 +19,7 @@ class Blockchain:
         #Incluindo o bloco a cadeia a blockchain
         self.chain.append(block) # append adiciona blck ao chain []
         return block
+    
+    #Método para retornar o bloco anterior
+    def get_previsous_block(self):
+        return self.chain[-1]
